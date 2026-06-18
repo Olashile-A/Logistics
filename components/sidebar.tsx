@@ -127,8 +127,7 @@ export function Sidebar({ stats }: SidebarProps) {
             );
           })}
         </nav>
-
-        {/* Sidebar Footer */}
+        
         <div className="px-3 py-4 border-t border-slate-200">
           <div className="bg-slate-50 rounded-lg p-3">
             <p className="text-xs font-semibold text-slate-600 uppercase mb-2">
