@@ -49,8 +49,6 @@ export function Sidebar({ stats }: SidebarProps) {
     if (id === "all") {
       setStatusFilter(null);
     } else if (id === "Exception") {
-      // For exceptions, filter by the first exception status as a proxy
-      // In a real app, you'd want a dedicated exceptions filter
       setStatusFilter("Delayed" as any);
     } else {
       setStatusFilter(id as any);
