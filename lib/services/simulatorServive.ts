@@ -7,8 +7,7 @@ export function startSimulator() {
   if (intervalId) return; // prevent multiple intervals
 
   intervalId = setInterval(() => {
-    const { deliveries, updateDelivery } =
-      useDeliveryStore.getState();
+    const { deliveries, updateDelivery } = useDeliveryStore();
 
     if (!deliveries.length) return;
 

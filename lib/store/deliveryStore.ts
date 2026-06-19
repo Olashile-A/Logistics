@@ -11,7 +11,7 @@ type DeliveryStore = {
 
 const generate = (): Delivery[] => generateMockDeliveries();
 
-export const useDeliveryStore = create<DeliveryStore>((set, get) => ({
+export const useDeliveryStore = create<DeliveryStore>((set) => ({
   deliveries: generate(),
 
   setDeliveries: (data) => set({ deliveries: data }),

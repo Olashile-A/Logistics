@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
     try {
       // Fetch deliveries from the real API
       
-      const response = await fetch(`${API_ENDPOINT}`, {
+      const response = await fetch(`${API_ENDPOINT}/v1/deliveries`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ export async function GET(request: NextRequest) {
     } catch (apiError) {
       console.warn("External API failed, using mock data:", apiError);
       // Fallback to mock data if external API fails
-      deliveries = mockDataService.getAllDeliveries();      
+      deliveries = mockDataService.getAllDeliveries();
       
       fromMockData = true;
     }

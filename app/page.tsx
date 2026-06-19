@@ -30,7 +30,6 @@ export default function Page() {
   //   data?.pages.flatMap((page) => page.data) ?? [];
 
    const deliveries = useDeliveryStore((s) => s.deliveries);
-   
 
   useEffect(() => {
     startSimulator();
